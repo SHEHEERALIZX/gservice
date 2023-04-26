@@ -25,7 +25,7 @@ SECRET_KEY = 'd3kavfz(*0#66o+3*g!aa(7bv!c7$gzi-#)1@h%qwqtjoe%soj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["service.gptcpalakkad.ac.in","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ["service.gptcpalakkad.ac.in","127.0.0.1","localhost","sudevank.pythonanywhere.com"]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -90,12 +90,12 @@ WSGI_APPLICATION = 'gservice.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gservice',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sudevank$gservice',
+        'USER': 'sudevank',
+        'PASSWORD': 'gservice',
+        'HOST': 'sudevank.mysql.pythonanywhere-services.com',
+       # 'PORT': '5432',
     }
 }
 
